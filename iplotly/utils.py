@@ -14,9 +14,6 @@ DEFAULTS_FILE = "defaults.yml"
 def local_filepath(file):
     return os.path.join(os.path.dirname(__file__), file)
 
-    os.path.realpath(
-        os.path.join(os.getcwd(), os.path.dirname(file)))
-
 
 def yaml_load(filepath):
     with open(filepath, "r") as f:
