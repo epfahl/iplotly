@@ -1,0 +1,19 @@
+global:
+  color: "rgb(69, 100, 153)"
+
+scatter:
+  symbol: "circle"
+  size: 8
+  opacity: 1
+  line_width: 0
+
+line:
+  width: 2
+  opacity: 1
+  dash: "solid"
+  fill: "none"
+  connectgaps: false
+
+bar:
+  gap: 0.5
+  opacity: 1
