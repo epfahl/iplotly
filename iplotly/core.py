@@ -43,7 +43,7 @@ class Plot(object):
     def fig(self):
         """Return the Plotly figure object.
         """
-        self._fig.data = [tr.graph_obj for k, tr in self._traces.iteritems()]
+        self._fig.data = [tr.graph_obj for k, tr in self._traces.items()]
         return self._fig
 
     @property
@@ -67,7 +67,7 @@ class Plot(object):
         ----
         * Make this work when the value is a list (e.g., shapes, annotations)
         """
-        for k, v in props.iteritems():
+        for k, v in props.items():
             if isinstance(v, dict):
                 self._fig['layout'][k].update(v)
             elif "__" in k:
@@ -83,7 +83,7 @@ class Plot(object):
         obj = self._traces[key]
         if 'gap' in props and obj.graph_obj.type == 'bar':
             self.update_layout(bargap=props.pop('gap'))
-        for k, v in props.iteritems():
+        for k, v in props.items():
             setattr(obj, k, v)
         return self
 
