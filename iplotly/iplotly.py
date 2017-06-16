@@ -5,7 +5,7 @@ import collections
 
 import plotly.graph_objs as go
 
-import utils, graph_objs as igo
+from iplotly import utils, graph_objs as igo
 
 
 # ------------------------------
