@@ -1,2 +1,2 @@
-from core import Plot
-import utils
+from .core import Plot
+from . import utils
