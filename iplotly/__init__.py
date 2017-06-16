@@ -1,2 +1,2 @@
-from iplotly import Plot
-import utils
+from . import Plot
+from . import utils
